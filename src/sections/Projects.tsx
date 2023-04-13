@@ -1,69 +1,69 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const Projects = () => {
   const projectsData = [
     {
-      image: "/krypt.png",
-      projectName: "Krypt - Web 3.0 Application",
+      image: '/krypt.png',
+      projectName: 'Krypt - Web 3.0 Application',
       projectDescription:
-        "Krypt is a Web3.0 blockchain application that enables users to send transactions over the blockchain, with each transaction being permanently recorded on the blockchain.",
+        'Krypt is a Web3.0 blockchain application that enables users to send transactions over the blockchain, with each transaction being permanently recorded on the blockchain.',
       projectTech: [
-        "React",
-        "TypeScript",
-        "TailwindCSS",
-        "Solidity",
-        "Ethereum",
+        'React',
+        'TypeScript',
+        'TailwindCSS',
+        'Solidity',
+        'Ethereum',
       ],
       projectExternalLinks: {
-        github: "https://github.com/francislagares/krypt-blockchain-app",
-        externalLink: "https://krypt-blockchain-app.pages.dev",
+        github: 'https://github.com/francislagares/krypt-blockchain-app',
+        externalLink: 'https://krypt-blockchain-app.pages.dev',
       },
     },
     {
-      image: "/furrow.png",
-      projectName: "Awwwards Furrow Website",
+      image: '/furrow.png',
+      projectName: 'Awwwards Furrow Website',
       projectDescription:
-        "This project is based on the outstanding Awwwards website from where I picked up this one and built it with React and TypeScript. The main purpose of this project was intended as a learning project.",
+        'This project is based on the outstanding Awwwards website from where I picked up this one and built it with React and TypeScript. The main purpose of this project was intended as a learning project.',
       projectTech: [
-        "React",
-        "TypeScript",
-        "Framer Motion",
-        "Styled Components"
+        'React',
+        'TypeScript',
+        'Framer Motion',
+        'Styled Components',
       ],
       projectExternalLinks: {
-        github: "https://github.com/francislagares/awwwards-furrow-studio",
-        externalLink: "https://awwwards-rebuilt-furrow.vercel.app",
+        github: 'https://github.com/francislagares/awwwards-furrow-studio',
+        externalLink: 'https://awwwards-rebuilt-furrow.vercel.app',
       },
     },
     {
-      image: "/bankist.png",
-      projectName: "Bankist Website App",
+      image: '/bankist.png',
+      projectName: 'Bankist Website App',
       projectDescription:
-        "The Bankist App website ( built using HTML, CSS & Javascript/Typescript ) with the purpose of training and showing advanced DOM events within vanilla JS, screen transitions, sliders, lazy-loading and some other features can be found in the code/site.",
+        'The Bankist App website ( built using HTML, CSS & Javascript/Typescript ) with the purpose of training and showing advanced DOM events within vanilla JS, screen transitions, sliders, lazy-loading and some other features can be found in the code/site.',
       projectTech: [
-        "JavaScript",
-        "TypeScript",
-        "HTML5",
-        "Scss",
-        "Node.js",
-        "Express",
+        'JavaScript',
+        'TypeScript',
+        'HTML5',
+        'Scss',
+        'Node.js',
+        'Express',
       ],
       projectExternalLinks: {
-        github: "https://github.com/francislagares/bankist-website",
-        externalLink: "https://bankist-website-francislagares.netlify.app",
+        github: 'https://github.com/francislagares/bankist-website',
+        externalLink: 'https://bankist-website-francislagares.netlify.app',
       },
     },
   ];
   return (
-    <div className="projects" id="work">
+    <div className='projects' id='work'>
       <motion.div
-        className="title"
-        initial="hidden"
-        whileInView="visible"
+        className='title'
+        initial='hidden'
+        whileInView='visible'
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         variants={{
@@ -73,7 +73,7 @@ const Projects = () => {
       >
         <h2>Some Projects I’ve Built</h2>
       </motion.div>
-      <div className="projects-container">
+      <div className='projects-container'>
         {projectsData.map(
           ({
             image,
@@ -84,10 +84,10 @@ const Projects = () => {
           }) => {
             return (
               <motion.div
-                className="project"
+                className='project'
                 key={projectName}
-                initial="hidden"
-                whileInView="visible"
+                initial='hidden'
+                whileInView='visible'
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 variants={{
@@ -95,40 +95,40 @@ const Projects = () => {
                   hidden: { opacity: 0, y: 0 },
                 }}
               >
-                <div className="project-image">
-                  <div className="project-image-overlay"></div>
-                  <div className="project-image-container">
+                <div className='project-image'>
+                  <div className='project-image-overlay'></div>
+                  <div className='project-image-container'>
                     <Image src={image} fill alt={projectName} quality={100} />
                   </div>
                 </div>
-                <div className="project-info">
-                  <p className="project-info-overline">Featured Project</p>
-                  <h3 className="project-info-title">{projectName}</h3>
-                  <div className="project-info-description">
+                <div className='project-info'>
+                  <p className='project-info-overline'>Featured Project</p>
+                  <h3 className='project-info-title'>{projectName}</h3>
+                  <div className='project-info-description'>
                     <p>{projectDescription}</p>
                   </div>
-                  <ul className="project-info-tech-list">
-                    {projectTech.map((tech) => (
-                      <li className="project-info-tech-list-item" key={tech}>
+                  <ul className='project-info-tech-list'>
+                    {projectTech.map(tech => (
+                      <li className='project-info-tech-list-item' key={tech}>
                         {tech}
                       </li>
                     ))}
                   </ul>
-                  <ul className="project-info-links">
-                    <li className="project-info-links-item">
+                  <ul className='project-info-links'>
+                    <li className='project-info-links-item'>
                       <Link
                         href={projectExternalLinks.github}
-                        className="project-info-links-item-link"
-                        target="_blank"
+                        className='project-info-links-item-link'
+                        target='_blank'
                       >
                         <FiGithub />
                       </Link>
                     </li>
-                    <li className="project-info-links-item">
+                    <li className='project-info-links-item'>
                       <Link
                         href={projectExternalLinks.externalLink}
-                        className="project-info-links-item-link"
-                        target="_blank"
+                        className='project-info-links-item-link'
+                        target='_blank'
                       >
                         <FiExternalLink />
                       </Link>
@@ -137,11 +137,11 @@ const Projects = () => {
                 </div>
               </motion.div>
             );
-          }
+          },
         )}
       </div>
     </div>
   );
-}
+};
 
 export default Projects;

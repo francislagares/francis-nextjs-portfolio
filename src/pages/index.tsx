@@ -1,15 +1,16 @@
-import Head from "next/head";
-import Email from "@/components/Email";
-import Loader from "@/components/Loader";
-import SocialIcons from "@/components/SocialIcons";
-import Footer from "@/sections/Footer";
-import Hero from "@/sections/Hero";
-import Navbar from "@/sections/Navbar";
-import React, { useState } from "react";
-import About from "@/sections/About";
-import Contact from "@/sections/Contact";
-import Projects from "@/sections/Projects";
-import Experience from "@/sections/Experience";
+import Head from 'next/head';
+import React, { useState } from 'react';
+
+import Email from '@/components/Email';
+import Loader from '@/components/Loader';
+import SocialIcons from '@/components/SocialIcons';
+import About from '@/sections/About';
+import Contact from '@/sections/Contact';
+import Experience from '@/sections/Experience';
+import Footer from '@/sections/Footer';
+import Hero from '@/sections/Hero';
+import Navbar from '@/sections/Navbar';
+import Projects from '@/sections/Projects';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,10 +22,10 @@ const Index = () => {
   };
 
   return (
-    <div className="app">
+    <div className='app'>
       <Head>
         <title>Francis Lagares - Software Engineer</title>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
       {showContent && (
         <>
@@ -44,6 +45,6 @@ const Index = () => {
       <Loader isLoading={isLoading} setIsLoading={handleLoaderLoaded} />
     </div>
   );
-}
+};
 
 export default Index;
