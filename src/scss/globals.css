@@ -1,5 +1,5 @@
 :root {
-  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --navy-shadow: rgb(2 12 27 / 70%);
   --background-color: #000;
   --lightest-navy: #233554;
   --light-navy: #112240;
@@ -8,11 +8,6 @@
   --light-slate: #ccd6f6;
   --lightest-slate: #B4B4B3;
   --theme-color: #D4B188;
-}
-
-::-moz-selection {
-  color: white;
-  background: var(--theme-color);
 }
 
 ::selection {
@@ -30,8 +25,14 @@ body {
   counter-reset: title;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
 main {
-  transition: 0.3s ease-in-out;
+  transition: none;
+}
+}
+
+main {
+  transition: .3s ease-in-out;
 }
 
 .blur {
@@ -50,12 +51,15 @@ html {
   scrollbar-width: thin;
   scrollbar-color: var(--dark-slate) var(--background-color);
 }
+
 ::-webkit-scrollbar {
   width: 12px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--background-color);
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--dark-slate);
   border: 3px solid var(--background-color);
