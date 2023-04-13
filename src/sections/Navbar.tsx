@@ -64,7 +64,7 @@ const Navbar = () => {
             ease: 'easeInOut',
           }}
         >
-          <Link href='francislagares.vercel.app'>
+          <Link href='/'>
             <Logo />
           </Link>
         </motion.div>

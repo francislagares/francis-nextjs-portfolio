@@ -419,7 +419,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^17.4.2":
+"@commitlint/cli@npm:^17.6.0":
   version: 17.6.0
   resolution: "@commitlint/cli@npm:17.6.0"
   dependencies:
@@ -439,7 +439,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^17.4.2":
+"@commitlint/config-conventional@npm:^17.6.0":
   version: 17.6.0
   resolution: "@commitlint/config-conventional@npm:17.6.0"
   dependencies:
@@ -4572,8 +4572,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "francis-nextjs-portfolio@workspace:."
   dependencies:
-    "@commitlint/cli": ^17.4.2
-    "@commitlint/config-conventional": ^17.4.2
+    "@commitlint/cli": ^17.6.0
+    "@commitlint/config-conventional": ^17.6.0
     "@types/node": 18.15.11
     "@types/react": 18.0.35
     "@types/react-dom": 18.0.11
