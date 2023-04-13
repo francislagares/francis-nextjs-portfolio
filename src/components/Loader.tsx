@@ -1,7 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react';
-
-import Logo from './Logo';
+import React, { useEffect } from 'react';
 
 const Loader = ({ isLoading, setIsLoading }: any) => {
   useEffect(() => {
