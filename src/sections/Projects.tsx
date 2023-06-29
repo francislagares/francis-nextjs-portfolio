@@ -1,11 +1,29 @@
+import { FiExternalLink, FiGithub } from 'react-icons/fi';
+
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
-import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const Projects = () => {
   const projectsData = [
+    {
+      image: '/gamehub.png',
+      projectName: 'GameHub Project - React Web Application',
+      projectDescription:
+        'GameHub is a React Web Application that makes use of the popular RAWG Video Games Database API. This project also makes use of the most top-notch technologies up until now.',
+      projectTech: [
+        'React',
+        'TypeScript',
+        'ChakraUI',
+        'React Router',
+        'React Query',
+        'Zustand',
+      ],
+      projectExternalLinks: {
+        github: 'https://github.com/francislagares/game-hub',
+        externalLink: 'https://game-hub-francis.vercel.app',
+      },
+    },
     {
       image: '/krypt.png',
       projectName: 'Krypt - Web 3.0 Application',

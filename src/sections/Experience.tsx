@@ -1,6 +1,7 @@
+import { useEffect, useState } from 'react';
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
 
 const Experience = () => {
   const [selected, setSelected] = useState(0);
@@ -14,6 +15,18 @@ const Experience = () => {
   }, [selected]);
 
   const experiences = [
+    {
+      name: 'BUILD&DEPLOY',
+      role: 'Frontend React Developer',
+      url: 'https://www.infojobs.net/build-deploy-sl./em-i98485754515552668573768022266156902682/',
+      start: 'May 2023',
+      end: 'Currently working here.',
+      shortDescription: [
+        'Developing new UI features using latest technologies React, HTML5, CSS3, JavaScript & TypeScript.',
+        'Translating designs and wireframes into high quality code.',
+        'Optimizing components for maximum performance across multiple devices and browsers.',
+      ],
+    },
     {
       name: 'PRIMION DIGITEK',
       role: 'Software Engineer',
@@ -113,7 +126,11 @@ const Experience = () => {
               <span>{experiences[selected].role}</span>
               <span className='exp-details-position-company'>
                 &nbsp;@&nbsp;
-                <Link href={experiences[selected].url} className='link'>
+                <Link
+                  href={experiences[selected].url}
+                  className='link'
+                  target='_blank'
+                >
                   {experiences[selected].name}
                 </Link>
               </span>
