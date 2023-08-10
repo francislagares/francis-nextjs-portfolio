@@ -20,7 +20,7 @@ const Experience = () => {
       role: 'Frontend React Developer',
       url: 'https://www.infojobs.net/build-deploy-sl./em-i98485754515552668573768022266156902682/',
       start: 'May 2023',
-      end: 'Currently working here.',
+      end: 'July 2023',
       shortDescription: [
         'Developing new UI features using latest technologies React, HTML5, CSS3, JavaScript & TypeScript.',
         'Translating designs and wireframes into high quality code.',
