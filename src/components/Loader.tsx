@@ -1,7 +1,12 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect } from 'react';
 
-const Loader = ({ isLoading, setIsLoading }: any) => {
+interface Props {
+  isLoading: boolean;
+  setIsLoading: () => void;
+}
+
+const Loader = ({ isLoading, setIsLoading }: Props) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading();

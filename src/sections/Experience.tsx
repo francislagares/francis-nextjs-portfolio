@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
-
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 const Experience = () => {
   const [selected, setSelected] = useState(0);

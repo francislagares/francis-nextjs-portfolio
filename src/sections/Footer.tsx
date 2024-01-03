@@ -1,8 +1,7 @@
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
-
 import { FaRegStar } from 'react-icons/fa';
 import { FiGitBranch } from 'react-icons/fi';
-import Link from 'next/link';
 
 const Footer = () => {
   const [githubInfo, setGitHubInfo] = useState({
