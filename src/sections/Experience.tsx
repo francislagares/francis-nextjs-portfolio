@@ -15,15 +15,30 @@ const Experience = () => {
 
   const experiences = [
     {
+      name: 'BUILD&DEPLOY',
+      role: 'Frontend React Developer',
+      url: 'https://www.infojobs.net/build-deploy-sl./em-i98485754515552668573768022266156902682/',
+      start: 'May 2023',
+      end: 'July 2023',
+      shortDescription: [
+        'Developing new UI features using latest technologies React, HTML5, CSS3, JavaScript & TypeScript.',
+        'Translating designs and wireframes into high quality code.',
+        'Optimizing components for maximum performance across multiple devices and browsers.',
+        'Integration with headless CMS for content authoring with a RESTful API.',
+        'Optimizing components for maximum performance across multiple devices and browsers.',
+      ],
+    },
+    {
       name: 'PRIMION DIGITEK',
       role: 'Software Engineer',
       url: 'https://www.primion-digitek.es/',
       start: 'February 2023',
       end: 'April 2023',
       shortDescription: [
-        'Working on a large enterprise codebase utilizing NestJS Framework.',
-        "Throughout my work, I've used various stack technologies, including TypeORM, TypeScript, PostgreSQL, Docker, among others.",
-        "I've also worked in a small team that includes Frontend Developers, Backend Developers, and UI/UX Developers.",
+        'Working on enterprise distributed system under Clean Architecture with the NestJS framework, PostgreSQL, TypeORM and RabbitMQ.',
+        'Implemented secure authentication and authorization solutions.',
+        'Writing optimized complex queries with TypeORM.',
+        'Worked in an agile team that includes Frontend Developers, Backend Developers, and UI/UX Developers.',
       ],
     },
     {
@@ -35,6 +50,7 @@ const Experience = () => {
       shortDescription: [
         'Working on web crawlers to gather data across retailers, with the aim of enhancing my skills.',
         'Improve data acquisition software built with NodeJS and TypeScript.',
+        'Research and monitor the gathered statistics.',
         'Working with the latest technologies, specifically JavaScript, TypeScript, Node.js, Docker and Kubernetes.',
       ],
     },

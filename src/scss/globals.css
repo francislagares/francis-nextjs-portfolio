@@ -1,13 +1,13 @@
 :root {
-  --navy-shadow: rgb(2 12 27 / 70%);
-  --background-color: #000;
-  --lightest-navy: #233554;
-  --light-navy: #112240;
+  --navy-shadow: rgb(2 10 15 / 20%);
+  --background-color: #e0e7e9;
+  --lightest-navy: #a3c6c4;
+  --light-navy: #6c7a89;
   --dark-slate: #495670;
-  --slate: #8892b0;
-  --light-slate: #ccd6f6;
-  --lightest-slate: #B4B4B3;
-  --theme-color: #D4B188;
+  --slate: #354649;
+  --light-slate: #212121;
+  --lightest-slate: #354649;
+  --theme-color: #181a1b;
 }
 
 ::selection {
@@ -26,13 +26,13 @@ body {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-main {
-  transition: none;
-}
+  main {
+    transition: none;
+  }
 }
 
 main {
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .blur {

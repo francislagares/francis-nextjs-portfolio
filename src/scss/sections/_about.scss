@@ -3,7 +3,7 @@
   padding: 175px 0;
   .title {
     font-family: var(--raleway);
-    color: var(--lightest-slate);
+    color: var(--theme-color);
     position: relative;
     h2 {
       margin-bottom: 2rem;
@@ -11,12 +11,12 @@
       font-weight: 700;
       &::before {
         counter-increment: title;
-        content: "0" counter(title) ".";
+        content: '0' counter(title) '.';
         margin-right: 0.5rem;
         color: var(--theme-color);
       }
       &::after {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         top: 20px;
@@ -57,7 +57,7 @@
           color: var(--slate);
           position: relative;
           &::before {
-            content: "▹";
+            content: '▹';
             position: absolute;
             left: -20px;
             top: 6px;
