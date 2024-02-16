@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const About = () => {
   const ref = useRef(null);
@@ -27,9 +27,9 @@ const About = () => {
       <div className='about-grid'>
         <div className='about-grid-info'>
           <p className='about-grid-info-text'>
-            I am a Fullstack developer with 4 years of experience. I am
-            passionate about developing web applications that are both
-            functional and visually appealing.
+            I am a Full Stack Developer being part of the IT industry since
+            2010. I am passionate about developing web applications that are
+            both functional and visually appealing.
           </p>
           <p className='about-grid-info-text'>
             I specialize in building web applications using the MERN stack -

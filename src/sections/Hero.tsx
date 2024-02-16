@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import React from 'react';
 
 const Hero = () => {
   return (
@@ -50,9 +49,9 @@ const Hero = () => {
           delay: 1.35,
         }}
       >
-        I&apos;m a software engineer with a strong foundation in front-end &
-        back-end development. Currently, I&apos;m focused on building high
-        quality & professional software that scales.
+        Full Stack Engineer with a strong foundation in front-end & back-end
+        development. Currently, I&apos;m focused on building high quality &
+        professional software that scales.
       </motion.p>
     </div>
   );
