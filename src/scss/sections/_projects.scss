@@ -160,14 +160,22 @@
         .project-info {
           width: 600px;
           height: 300px;
+
           background-color: rgba(31, 10, 44, 0.592);
           align-items: flex-start;
           padding: 1rem;
 
+          &-overline,
+          &-title,
+          &-tech-list-item,
+          &-links-item-link {
+            color: white;
+          }
+
           &-description {
             background-color: transparent;
             p {
-              color: var(--white);
+              color: white;
               padding: 0;
               text-align: start;
             }

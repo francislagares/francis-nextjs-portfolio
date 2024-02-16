@@ -39,7 +39,6 @@ const Index = () => {
           Frontend Development, Backend Development, JavaScript, HTML, CSS, React, Node.js, Portfolio'
         />
         <meta name='author' content='Francis Lagares' />
-        <meta name='robots' content='index, follow' />
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
       {showContent && (
