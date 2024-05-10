@@ -1,10 +1,13 @@
-import Head from 'next/head';
-import { NextSeo } from 'next-seo';
 import { useState } from 'react';
+
+import Head from 'next/head';
+
+import { NextSeo } from 'next-seo';
 
 import Email from '@/components/Email';
 import Loader from '@/components/Loader';
 import SocialIcons from '@/components/SocialIcons';
+
 import About from '@/sections/About';
 import Contact from '@/sections/Contact';
 import Experience from '@/sections/Experience';

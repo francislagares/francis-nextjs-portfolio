@@ -1,5 +1,6 @@
-import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect } from 'react';
+
+import { AnimatePresence, motion } from 'framer-motion';
 
 interface Props {
   isLoading: boolean;

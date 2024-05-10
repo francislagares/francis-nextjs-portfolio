@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const Projects = () => {
