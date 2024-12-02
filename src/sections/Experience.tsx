@@ -17,11 +17,26 @@ const Experience = () => {
 
   const experiences = [
     {
+      name: 'HIBERUS',
+      role: 'Frontend React Developer',
+      url: 'https://www.infojobs.net/build-deploy-sl./em-i98485754515552668573768022266156902682/',
+      start: 'Sep 2024',
+      end: 'Current',
+      shortDescription: [
+        'Working on a large scale project for one of the most prominent global banking clients.',
+        'Developing dynamic and scalable user interfaces using React, Styled Components, JavaScript, and TypeScript.',
+        'Writing unit tests with Jest and Testing Library to ensure code reliability.',
+        'Implementing responsive designs to ensure adaptability and maintainability across multiple devices and browsers.',
+        'Applying Object-Oriented Programming (OOP), Domain Driven Design (DDD), Hexagonal Architecture, and Micro-Frontend concepts to structure responsibilities and improve code modularity.',
+        'Ensuring that components comply with high accessibility and security standards.',
+      ],
+    },
+    {
       name: 'BUILD&DEPLOY',
       role: 'Frontend React Developer',
       url: 'https://www.infojobs.net/build-deploy-sl./em-i98485754515552668573768022266156902682/',
       start: 'May 2023',
-      end: 'Current',
+      end: 'Sep 2024',
       shortDescription: [
         'Developing new UI features using latest technologies React, HTML5, CSS3, JavaScript & TypeScript.',
         'Translating designs and wireframes into high quality code.',
