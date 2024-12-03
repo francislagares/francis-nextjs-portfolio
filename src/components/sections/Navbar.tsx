@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 import { CgClose } from 'react-icons/cg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-import Button from '@/components/Button';
-import Logo from '@/components/Logo';
+import Button from '@/components/ui/Button';
+import Logo from '@/components/ui/Logo';
 
 const Navbar = () => {
   const [navbarVisible, setNavbarVisible] = useState(false);
@@ -23,11 +23,19 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      window.pageYOffset > 100
-        ? setNavbarVisible(true)
-        : setNavbarVisible(false);
-    });
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setNavbarVisible(true);
+      } else {
+        setNavbarVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -35,18 +43,21 @@ const Navbar = () => {
     links.forEach(link => {
       link.addEventListener('click', () => setResponsiveNavVisible(false));
     });
+
     const nav = document.querySelector('.nav-items');
     nav?.addEventListener('click', e => {
       e.stopPropagation();
     });
+
     const html = document.querySelector('html');
-    html?.addEventListener('click', e => {
+    html?.addEventListener('click', () => {
       setResponsiveNavVisible(false);
     });
   }, []);
 
   useEffect(() => {
     const main = document.querySelector('main');
+
     if (responsiveNavVisible) {
       main?.classList.add('blur');
     } else {

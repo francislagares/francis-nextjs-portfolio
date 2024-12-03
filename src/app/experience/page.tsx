@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 
 import Link from 'next/link';
@@ -19,7 +21,7 @@ const Experience = () => {
     {
       name: 'HIBERUS',
       role: 'Frontend React Developer',
-      url: 'https://www.infojobs.net/build-deploy-sl./em-i98485754515552668573768022266156902682/',
+      url: 'https://www.hiberus.com/',
       start: 'Sep 2024',
       end: 'Current',
       shortDescription: [

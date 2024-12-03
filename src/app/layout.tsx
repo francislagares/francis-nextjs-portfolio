@@ -1,18 +1,22 @@
+'use client';
+
 import '@/scss/globals.css';
 import '@/scss/index.scss';
 
-import type { AppProps } from 'next/app';
 import { Fira_Code, Raleway } from 'next/font/google';
 
-import GoogleAnalytics from '@/components/GoogleAnalytics';
+import GoogleAnalytics from '@/components/ui/GoogleAnalytics';
 
 const raleway = Raleway({ subsets: ['latin'] });
 const firaCode = Fira_Code({
   weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
 });
-
-const App = ({ Component, pageProps }: AppProps) => {
+const RootLayout = ({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
   return (
     <>
       {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
@@ -24,9 +28,11 @@ const App = ({ Component, pageProps }: AppProps) => {
           --fira-code: ${firaCode.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />;
+      <html lang='en'>
+        <body>{children}</body>
+      </html>
     </>
   );
 };
 
-export default App;
+export default RootLayout;

@@ -1,20 +1,22 @@
+'use client';
+
 import { useState } from 'react';
 
 import Head from 'next/head';
 
 import { NextSeo } from 'next-seo';
 
-import Email from '@/components/Email';
-import Loader from '@/components/Loader';
-import SocialIcons from '@/components/SocialIcons';
+import Footer from '@/components/sections/Footer';
+import Hero from '@/components/sections/Hero';
+import Navbar from '@/components/sections/Navbar';
+import Email from '@/components/ui/Email';
+import Loader from '@/components/ui/Loader';
+import SocialIcons from '@/components/ui/SocialIcons';
 
-import About from '@/sections/About';
-import Contact from '@/sections/Contact';
-import Experience from '@/sections/Experience';
-import Footer from '@/sections/Footer';
-import Hero from '@/sections/Hero';
-import Navbar from '@/sections/Navbar';
-import Projects from '@/sections/Projects';
+import About from '@/app/about/page';
+import Contact from '@/app/contact/page';
+import Experience from '@/app/experience/page';
+import Projects from '@/app/projects/page';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -47,16 +49,16 @@ const Index = () => {
       {showContent && (
         <>
           <Navbar />
-          <SocialIcons />
-          <Email />
           <main>
+            <SocialIcons />
+            <Email />
             <Hero />
             <About />
             <Experience />
             <Projects />
             <Contact />
+            <Footer />
           </main>
-          <Footer />
         </>
       )}
       <Loader isLoading={isLoading} setIsLoading={handleLoaderLoaded} />
