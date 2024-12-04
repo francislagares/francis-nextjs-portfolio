@@ -7,9 +7,11 @@ import { motion, useInView } from 'framer-motion';
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
+
   useEffect(() => {
     console.log('Element is in view: ', isInView);
   }, [isInView]);
+
   return (
     <motion.div
       className='about'
@@ -60,7 +62,6 @@ const About = () => {
         </div>
         <div className='about-grid-photo'>
           <div className='overlay'></div>
-          <div className='overlay-border'></div>
           <div className='about-grid-photo-container'>
             <Image src='/francis.jpeg' alt='profile' width={350} height={450} />
           </div>

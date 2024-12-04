@@ -1,4 +1,4 @@
-export const projectsData = [
+export const projects = [
   {
     image: '/gamehub.png',
     projectName: 'GameHub - React Application',

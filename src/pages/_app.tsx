@@ -4,8 +4,7 @@ import '@/scss/index.scss';
 import type { AppProps } from 'next/app';
 import { Fira_Code, Raleway } from 'next/font/google';
 
-import GoogleAnalytics from '@/components/GoogleAnalytics';
-
+import GoogleAnalytics from '@/components/utils/GoogleAnalytics';
 const raleway = Raleway({ subsets: ['latin'] });
 const firaCode = Fira_Code({
   weight: ['300', '400', '500', '600', '700'],

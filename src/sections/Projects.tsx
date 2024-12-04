@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
-import { projectsData } from '@/data/experience';
+import { projects } from '@/data/projects';
 
 const Projects = () => {
   return (
@@ -23,7 +23,7 @@ const Projects = () => {
         <h2>Some Projects I’ve Built</h2>
       </motion.div>
       <div className='projects-container'>
-        {projectsData.map(
+        {projects.map(
           ({
             image,
             projectDescription,
@@ -47,7 +47,13 @@ const Projects = () => {
                 <div className='project-image'>
                   <div className='project-image-overlay'></div>
                   <div className='project-image-container'>
-                    <Image src={image} fill alt={projectName} quality={100} />
+                    <Image
+                      fill
+                      src={image}
+                      objectFit='cover'
+                      alt={projectName}
+                      quality={100}
+                    />
                   </div>
                 </div>
                 <div className='project-info'>
