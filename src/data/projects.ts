@@ -1,6 +1,6 @@
 export const projects = [
   {
-    image: '/gamehub.png',
+    projectImage: '/gamehub.png',
     projectName: 'GameHub - React Application',
     projectDescription:
       'GameHub is a React Web Application that makes use of the popular RAWG Video Games Database API. This project also makes use of the most top-notch technologies up until now.',
@@ -18,7 +18,7 @@ export const projects = [
     },
   },
   {
-    image: '/krypt.png',
+    projectImage: '/krypt.png',
     projectName: 'Krypt - Web 3.0 Application',
     projectDescription:
       'Krypt is a Web3.0 blockchain application that enables users to send transactions over the blockchain, with each transaction being permanently recorded on the blockchain.',
@@ -29,7 +29,7 @@ export const projects = [
     },
   },
   {
-    image: '/furrow.png',
+    projectImage: '/furrow.png',
     projectName: 'Awwwards Furrow Website',
     projectDescription:
       'This project is based on the outstanding Awwwards website from where I picked up this one and built it with React and TypeScript. The main purpose of this project was intended as a learning project.',
@@ -40,7 +40,7 @@ export const projects = [
     },
   },
   {
-    image: '/bankist.png',
+    projectImage: '/bankist.png',
     projectName: 'Bankist Website App',
     projectDescription:
       'The Bankist App website ( built using HTML, CSS & Javascript/Typescript ) with the purpose of training and showing advanced DOM events within vanilla JS, screen transitions, sliders, lazy-loading and some other features can be found in the code/site.',
