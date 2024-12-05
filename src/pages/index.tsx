@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 
 import Email from '@/components/ui/Email';
+import FollowCursor from '@/components/ui/FollowCursor';
 import Loader from '@/components/ui/Loader';
 import SocialIcons from '@/components/ui/SocialIcons';
 
@@ -46,6 +47,7 @@ const Index = () => {
       </Head>
       {showContent && (
         <>
+          <FollowCursor />
           <Navbar />
           <SocialIcons />
           <Email />
