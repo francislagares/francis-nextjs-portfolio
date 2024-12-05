@@ -1,12 +1,11 @@
 .contact {
   max-width: 700px;
   margin: 0px auto;
-  padding: 175px 0;
-  display: flex;
+  padding: 140px 0;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 
   .contact-title {
     color: var(--theme-color);
@@ -16,7 +15,7 @@
 
     &::before {
       counter-increment: title;
-      content: "0" counter(title) ".";
+      content: '0' counter(title) '.';
       margin-right: 0.5rem;
       color: var(--theme-color);
     }
@@ -37,7 +36,7 @@
     font-family: var(--raleway);
     text-align: center;
   }
-  
+
   .contact-cta {
     margin-top: 1rem;
     .btn {

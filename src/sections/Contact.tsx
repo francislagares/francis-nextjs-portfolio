@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 
-import Button from '@/components/ui/Button';
+import { FORMSPREE_KEY } from '@/constants';
+
+import ContactForm from './components/ContactForm';
 
 const Contact = () => {
   return (
@@ -23,9 +25,7 @@ const Contact = () => {
         open. Whether you have a question or just want to say hi, I&apos;ll try
         my best to get back to you!
       </p>
-      <div className='contact-cta'>
-        <Button link='mailto:francis.lagares@gmail.com' text='Say Hello' />
-      </div>
+      <ContactForm formspreeKey={FORMSPREE_KEY} />
     </motion.div>
   );
 };
