@@ -26,8 +26,8 @@ const FollowCursor: React.FC<FollowCursorProps> = ({
       position: 'fixed',
       top: '0',
       left: '0',
-      width: '40px', // Ajusta según tus necesidades
-      height: '40px', // Ajusta según tus necesidades
+      width: '40px',
+      height: '40px',
       border: `2px solid ${color}`,
       borderRadius: '50%',
       pointerEvents: 'none',

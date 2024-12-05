@@ -5,10 +5,11 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
   &-link {
     writing-mode: vertical-rl;
     text-decoration: none;
-    color: var(--light-slate);
+    color: var(--lightest-slate);
     font-family: var(--fira-code);
     font-size: var(--tsm2);
     letter-spacing: 0.1rem;
@@ -16,6 +17,7 @@
     outline: 2px dashed transparent;
     padding: 10px;
     transition: 0.3s ease-in-out;
+
     &:hover {
       color: var(--theme-color);
     }
@@ -23,17 +25,20 @@
       outline-color: var(--theme-color);
     }
   }
+
   &::after {
-    content: "";
+    content: '';
     display: block;
     width: 2px;
     height: 90px;
     margin: 0px auto;
     background-color: var(--light-slate);
   }
+
   @media screen and (max-width: 1080px) {
     right: 2rem;
   }
+
   @media screen and (max-width: 768px) {
     display: none;
   }

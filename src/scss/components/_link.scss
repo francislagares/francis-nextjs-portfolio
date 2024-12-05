@@ -3,6 +3,7 @@
   display: inline-block;
   position: relative;
   color: var(--theme-color);
+
   &:after {
     content: "";
     position: absolute;
@@ -15,6 +16,7 @@
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
+  
   &:hover,
   &:focus {
     &::after {
