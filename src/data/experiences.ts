@@ -1,10 +1,10 @@
 export const experiences = [
   {
-    name: 'HIBERUS',
+    name: 'PIXIE SERVICES SL',
     role: 'Frontend React Developer',
-    url: 'https://www.hiberus.com/',
+    url: 'https://pixie-services.com/',
     start: 'Sep 2024',
-    end: 'Current',
+    end: 'Dec 2024',
     shortDescription: [
       'Working on a large scale project for one of the most prominent global banking clients.',
       'Developing dynamic and scalable user interfaces using React, Styled Components, JavaScript, and TypeScript.',
