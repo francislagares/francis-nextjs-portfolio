@@ -1,8 +1,8 @@
 export const experiences = [
   {
-    name: 'HIBERUS',
+    name: 'PIXIE SERVICES SL',
     role: 'Frontend React Developer',
-    url: 'https://www.hiberus.com/',
+    url: 'https://pixie-services.com/',
     start: 'Sep 2024',
     end: 'Current',
     shortDescription: [
